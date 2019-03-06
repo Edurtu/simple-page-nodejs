@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <!-- LINKS PARA EL HEAD -->
+    <% include partials/head.html %>
+</head>
+<body>
+    <!-- Primeras pruebas:
+        <h1>Hola mundo! <%= 5 + 5; %> </h1>
+        <p><%= new Date(); %></p>
+        <h2>Variable 'texto' en la siguiente línea:</h2>
+        <p><%= texto %></p>
+    -->
+
+    <!-- MENÚ NAVEGACIÓN -->
+    <% include partials/navigation.html %>
+
+    <!-- CONTENIDO (secciones) -->
+    <!-- HEADER -->
+    <section class="container">
+        <header class="row">
+            <div class="col-lg-12 text-center">
+                <img class="animated rubberBand" src="/images/eagles-logo.png" alt="Eagles Logo">
+            </div>
+        </header>
+    </section>
+
+    <!-- SECCION ABOUT -->
+    <section class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-youtube fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+                <h2>Sección About</h2>
+                <h3>The most suscribed Youtuber</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eligendi optio officiis aut voluptate, dolor non facere veniam hic excepturi numquam ad magni nulla earum neque illo aspernatur cupiditate provident.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius magni accusantium magnam sed! Ducimus suscipit enim autem vitae, rerum veritatis mollitia necessitatibus fuga corporis soluta labore, nulla eius aperiam aspernatur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <% include partials/footer.html %>
+
+</body>
+</html>
